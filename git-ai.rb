@@ -5,21 +5,21 @@
 class GitAi < Formula
   desc "AI-powered Git commit message enhancer"
   homepage "https://github.com/daidi/git-ai"
-  version "1.2.1"
+  version "1.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/daidi/git-ai/releases/download/v1.2.1/git-ai_darwin_amd64.tar.gz"
-      sha256 "6b2b284ca05077c2584828d78e68864ba21f58bd23047cc6c9b0f48d79387bfc"
+      url "https://github.com/daidi/git-ai/releases/download/v1.2.2/git-ai_darwin_amd64.tar.gz"
+      sha256 "ae4f03e2bc140e14cf77dba50dc326bea320b1efb9cf18d6fe52220e24b8bfca"
 
       define_method(:install) do
         bin.install "git-ai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/daidi/git-ai/releases/download/v1.2.1/git-ai_darwin_arm64.tar.gz"
-      sha256 "7d108e2436e0d04cc518372f01d331990a3370ec4860c241a8fc132e03aeda62"
+      url "https://github.com/daidi/git-ai/releases/download/v1.2.2/git-ai_darwin_arm64.tar.gz"
+      sha256 "1d23df03b186f4ff0c0beec9e669fb9de2ab18ebdaf842ed454c4256c3b8f530"
 
       define_method(:install) do
         bin.install "git-ai"
@@ -29,15 +29,15 @@ class GitAi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/daidi/git-ai/releases/download/v1.2.1/git-ai_linux_amd64.tar.gz"
-      sha256 "75832f18a34130776257898e4b642129b1c7b82a1b432f227e9cbbb41e781e6f"
+      url "https://github.com/daidi/git-ai/releases/download/v1.2.2/git-ai_linux_amd64.tar.gz"
+      sha256 "b611d356ec0529314c8e53f225ad0c0914719717379a054bd2d096a95d8eea04"
       define_method(:install) do
         bin.install "git-ai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/daidi/git-ai/releases/download/v1.2.1/git-ai_linux_arm64.tar.gz"
-      sha256 "1712b2d1aabf92a9d147bf0062aa02fc882fc2054fe25ad9556a7dabf183719b"
+      url "https://github.com/daidi/git-ai/releases/download/v1.2.2/git-ai_linux_arm64.tar.gz"
+      sha256 "db36c193f05e0fb083354d0317c86fea300e5137032e768592c9a006fe568bba"
       define_method(:install) do
         bin.install "git-ai"
       end
